@@ -1,0 +1,142 @@
+.icon button
+{
+    float:right;
+    color:teal
+}
+button p{
+    
+    color:black
+}
+button{
+    border-radius: 10px;
+    border: 2px groove lightblue;
+}
+
+.icon h2{
+    text-decoration:overline double gray;
+}
+
+.apple
+{
+    width:100%;
+    height:50%;
+}
+.content h4{
+
+    position: absolute;
+    top:400px;
+    left:650px;
+    color:bisque;
+    
+}
+
+.link1 :hover
+{
+    text-decoration:aliceblue ;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.but
+{
+    margin-left:30px;
+}
+
+.but:hover{
+    background-color:rgb(60, 75, 33);
+}
+
+.but1:hover{
+    background-color: rgb(5, 81, 76);
+}
+
+.content1
+{
+    border:2px solid black;
+    background-color:rgb(214, 225, 229);
+    color:black;
+    width:700px;
+    height:170px;
+    padding:35px;
+    border-radius:50px;
+}
+
+.outside
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:300px;
+   
+}
+.but8:hover
+{
+    background-color:coral;
+}
+
+.new
+{
+    box-shadow: 5px 5px 5px grey;
+}
+.cart
+{
+    float :right;
+    margin-left: 7px;
+}
+.cart1
+{
+    float:right;
+}
+
+.new1
+{
+    box-shadow: 5px 5px 5px 5px grey;
+    padding: 30px;
+    border:2px solid black;
+}
+
+.inimage
+{
+    border:2px solid black;
+}
+
+.but5
+{
+    margin-left: 400px;
+    width:90px;
+    position:relative;
+    bottom:39px;
+    border:1px solid black;
+    color:cornsilk
+}
+
+.but5:hover{
+
+    background-color: cadetblue;
+}
+
+.quan
+{
+    width:40px;
+    border-radius:4px;
+}
+
+.use
+{
+    border:2px solid black;
+    border-radius:15px;
+    width:200px;
+   float:right;
+   margin-right:30px;
+   margin-top:20px;
+   color:darkblue;
+   padding:15px;
+   box-shadow:2px 2px black;
+}
+
+.use1
+{
+    margin-top:30px;
+    margin-left:590px;
+    text-shadow: 1px 1px 1px red;
+}
