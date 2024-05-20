@@ -18,13 +18,7 @@ const products = [
     brand: "OPPO",
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/4/1.jpg",
-      "https://i.dummyjson.com/data/products/4/2.jpg",
-      "https://i.dummyjson.com/data/products/4/3.jpg",
-      "https://i.dummyjson.com/data/products/4/4.jpg",
-      "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-    ],
+    images: "https://m.media-amazon.com/images/I/61Gf1OIORhS._AC_UY327_FMwebp_QL65_.jpg"
   },
 ];
 
@@ -42,7 +36,8 @@ function ForthProduct() {
 
   return (
     <>
-      <div className="front">
+      <div className="contain"  style={{backgroundImage:"url('https://images.hdqwalls.com/download/polygon-abstract-shapes-sharp-4k-wt-1336x768.jpg')"}}>
+      <div className="front" >
         <h1 className="use">
           <FontAwesomeIcon
             icon={faUser}
@@ -69,12 +64,13 @@ function ForthProduct() {
             style={{ width: "40rem", height: "40rem" }}
           >
             <img
-              src={product.images[3]}
+              src={product.images}
+              style={{height:"500px"}}
               className="card-img-top inimage"
               alt="..."
             />
             <div className="card-body">
-              <h4> {product.brand}</h4>
+              <h4> {product.brand}🍎</h4>
               <div className="drop">
                 <b style={{ float: "right" }}>
                   <label htmlFor="quantity">Quantity: </label>
@@ -118,7 +114,9 @@ function ForthProduct() {
             </div>
           </div>
         </div>
+       
       ))}
+      </div>
     </>
   );
 }

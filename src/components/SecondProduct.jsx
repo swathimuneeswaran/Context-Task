@@ -19,12 +19,7 @@ const products = [
     brand: "Apple",
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
-      "https://i.dummyjson.com/data/products/2/2.jpg",
-      "https://i.dummyjson.com/data/products/2/3.jpg",
-      "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-    ],
+    images: "https://m.media-amazon.com/images/I/71657TiFeHL._AC_UY327_FMwebp_QL65_.jpg"
   },
 ];
 
@@ -41,7 +36,9 @@ function SecondProduct() {
   const username = useContext(UserContext);
   return (
     <>
-      <div className="front">
+
+       <div className="contain"  style={{backgroundImage:"url('https://images.hdqwalls.com/download/polygon-abstract-shapes-sharp-4k-wt-1336x768.jpg')" ,marginBottom:"250px"}}>
+      <div className="front" >
         <h1 className="use">
           <FontAwesomeIcon
             icon={faUser}
@@ -65,10 +62,10 @@ function SecondProduct() {
         >
           <div
             className="card new1"
-            style={{ width: "40rem", height: "47rem" }}
+            style={{ width: "40rem", height: "40rem" }}
           >
             <img
-              src={product.images[3]}
+              src={product.images}
               className="card-img-top inimage"
               alt="..."
             />
@@ -83,7 +80,7 @@ function SecondProduct() {
                     value={quantity}
                     name="quantity"
                     min="1"
-                    max="34"
+                    max={product.stock}
                     readOnly
                     className="quan"
                   ></input>
@@ -117,7 +114,9 @@ function SecondProduct() {
             </div>
           </div>
         </div>
+       
       ))}
+      </div>
     </>
   );
 }

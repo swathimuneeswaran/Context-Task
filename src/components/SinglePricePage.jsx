@@ -18,13 +18,7 @@ const products = [
     brand: "Apple",
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/1/1.jpg",
-      "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/3.jpg",
-      "https://i.dummyjson.com/data/products/1/4.jpg",
-      "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-    ],
+    images: "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_UY327_FMwebp_QL65_.jpg"
   },
 ];
 
@@ -42,7 +36,8 @@ function SinglePricePage() {
 
   return (
     <>
-      <div className="front">
+     <div className="contain"  style={{backgroundImage:"url('https://images.hdqwalls.com/download/polygon-abstract-shapes-sharp-4k-wt-1336x768.jpg')"}}>
+      <div className="front" >
         <h1 className="use">
           <FontAwesomeIcon
             icon={faUser}
@@ -69,7 +64,7 @@ function SinglePricePage() {
             style={{ width: "40rem", height: "40rem" }}
           >
             <img
-              src={product.images[1]}
+              src={product.images}
               className="card-img-top inimage"
               alt="..."
             />
@@ -118,7 +113,9 @@ function SinglePricePage() {
             </div>
           </div>
         </div>
+       
       ))}
+      </div>
     </>
   );
 }

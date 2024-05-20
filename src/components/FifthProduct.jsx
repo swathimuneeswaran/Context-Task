@@ -19,11 +19,7 @@ const products = [
     brand: "Huawei",
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-    images: [
-      "https://i.dummyjson.com/data/products/5/1.jpg",
-      "https://i.dummyjson.com/data/products/5/2.jpg",
-      "https://i.dummyjson.com/data/products/5/3.jpg",
-    ],
+    images: "https://m.media-amazon.com/images/I/61Nw-tvWk1L._AC_UY327_FMwebp_QL65_.jpg"
   },
 ];
 
@@ -41,7 +37,8 @@ function FifthProduct() {
 
   return (
     <>
-      <div className="front">
+       <div className="contain"  style={{backgroundImage:"url('https://images.hdqwalls.com/download/polygon-abstract-shapes-sharp-4k-wt-1336x768.jpg')"}}>
+      <div className="front" >
         <h1 className="use">
           <FontAwesomeIcon
             icon={faUser}
@@ -53,7 +50,6 @@ function FifthProduct() {
           <i>{username[1]}📱</i>
         </h1>
       </div>
-
       {products.map((product) => (
         <div
           className="container-fluid"
@@ -66,10 +62,10 @@ function FifthProduct() {
         >
           <div
             className="card new1"
-            style={{ width: "40rem", height: "43rem" }}
+            style={{ width: "40rem", height: "40rem" }}
           >
             <img
-              src={product.images[1]}
+              src={product.images}
               className="card-img-top inimage"
               alt="..."
             />
@@ -118,7 +114,9 @@ function FifthProduct() {
             </div>
           </div>
         </div>
+       
       ))}
+      </div>
     </>
   );
 }

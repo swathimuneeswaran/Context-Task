@@ -19,7 +19,7 @@ const products = [
     brand: "Samsung",
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
+    images: "https://m.media-amazon.com/images/I/81ZSn2rk9WL._AC_UY327_FMwebp_QL65_.jpg"
   },
 ];
 
@@ -36,7 +36,8 @@ function ThirdProduct() {
 
   return (
     <>
-      <div className="front">
+    <div className="contain"  style={{backgroundImage:"url('https://images.hdqwalls.com/download/polygon-abstract-shapes-sharp-4k-wt-1336x768.jpg')"}}>
+      <div className="front" >
         <h1 className="use">
           <FontAwesomeIcon
             icon={faUser}
@@ -66,7 +67,6 @@ function ThirdProduct() {
               src={product.images}
               className="card-img-top inimage"
               alt="..."
-              style={{ width: "36rem", height: "20rem" }}
             />
             <div className="card-body">
               <h4> {product.brand}</h4>
@@ -79,7 +79,7 @@ function ThirdProduct() {
                     value={quantity}
                     name="quantity"
                     min="1"
-                    max="36"
+                    max={product.stock}
                     readOnly
                     className="quan"
                   ></input>
@@ -113,7 +113,9 @@ function ThirdProduct() {
             </div>
           </div>
         </div>
+       
       ))}
+      </div>
     </>
   );
 }
